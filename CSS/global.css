@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables CSS */
+:root {
+  --main-font: "Bebas Neue", serif;
+  --secondary-font: "Roboto Mono", monospace;
+  --primary-color: #243119;
+  --secondary-color: #629460;
+  --tertiary-color: #496235;
+  --light-color: #96c86b;
+  --text-color: #333;
+  --background-gradient: radial-gradient(
+    circle at 50% 50%,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --hover-shadow-color: rgba(0, 0, 0, 0.7);
+  --transition-duration: 0.3s;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  background-color: #96be8c;
+}
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+header {
+  background: linear-gradient(
+    to bottom,
+    rgba(75, 73, 73, 0.85),
+    rgba(0, 0, 0, 0)
+  );
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  padding: 1rem 1.5%;
+  position: relative;
+}
+
+header nav {
+  margin-left: 2rem; /* Adjust margin to position nav correctly */
+}
+
+header nav ul {
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  text-transform: uppercase;
+}
+header nav ul li {
+  transition: transform 0.3s ease;
+}
+
+header nav ul li:hover {
+  transform: scale(1.05);
+}
+
+header .newsletters {
+  margin: 0 2rem;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+header .newsletters {
+  margin-left: auto;
+}
+
+.button-newsletters {
+  background-image: linear-gradient(
+    to bottom right,
+    #496235 0%,
+    #496235 10%,
+    #96c86b 100%
+  );
+  color: black;
+  padding: 1rem 4rem;
+  font-size: 1.4rem;
+  border-radius: 4%;
+  border: 1px black solid;
+  outline: none;
+  cursor: pointer;
+  transition: background-image 0.5s ease, transform 0.2s ease;
+}
+
+.button-newsletters:hover {
+  background-image: linear-gradient(to top, #7ca976, #7ca976);
+  transform: translate(-5px, -5px);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.burger-menu {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer .socialmedia {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 50px;
+  background-color: var(--primary-color);
+  transition: background-color var(--transition-duration);
+}
+
+.footer .socialmedia a {
+  display: inline-block;
+  transition: transform var(--transition-duration),
+    filter var(--transition-duration);
+}
+
+.footer .socialmedia a:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+.title h2 {
+  font-size: 40px;
+  font-family: var(--secondary-font);
+  font-weight: 1;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3rem;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  font-size: 20px;
+}
+
+.left {
+  width: 40%;
+  margin: 0 7rem;
+}
+
+.left p {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.right li {
+  list-style: "⮞ ";
+  font-size: 15px;
+}
+
+.right ul {
+  margin: 20px 0;
+}
+
+.right h2 {
+  font-size: 24px;
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  font-weight: 1;
+}
+
+.footer a:visited,
+.footer a:link {
+  color: black;
+}
+
+.right a {
+  text-decoration: none;
+}
+.copy {
+  color: black;
+  text-align: left;
+  padding: 20px 0;
+  background-image: linear-gradient(to top, #588456, var(--secondary-color));
+  margin: 0.5rem 0;
+  overflow: hidden; /* Ajouté pour s'assurer qu'il n'y a pas de débordement */
+}
+
+.copy p {
+  font-size: 15px;
+  margin: 0.5rem 50px;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;
+  }
+
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  nav ul.open {
+    display: flex;
+    opacity: 1;
+  }
+
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+
+  .button-newsletters {
+    display: none;
+  }
+
+  .main-footer {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .left {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Si vous avez plusieurs éléments à empiler verticalement */
+    margin-bottom: 2.5rem;
+  }
+
+  .right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .right h2 {
+    text-align: center;
+  }
+
+  .right ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right li {
+    margin: 10px 0;
+  }
+
+  .copy p {
+    text-align: center;
+  }
+}

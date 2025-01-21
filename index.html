@@ -1,11 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/global.css" />
+  <link rel="stylesheet" href="CSS/index.css" />
+  <script src="JS/index.js" defer></script>
+  <title>Othomatisazion</title>
+  <link rel="icon" href="img/icon.png" type="image/x-icon" />
 </head>
+
 <body>
-    
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo de l'entreprise" />
+    </div>
+    <button class="burger-menu" aria-label="Toggle navigation">
+      &#9776;
+    </button>
+    <nav>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/">Projets</a></li>
+        <li><a href="/">Outils</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+      </ul>
+    </nav>
+    <div class="newsletters">
+      <button type="button" class="button-newsletters">Newsletters</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="main">
+      <div class="text">
+        <h1>
+          L'automatisation
+          <br />
+          <span>ça sert à quoi ?</span>
+        </h1>
+        <p class="tab">
+          L'automatisation, c'est transformer vos tâches répétitives en
+          processus fluides et sans effort grâce à la technologie.
+        </p>
+        <p class="tab">
+          Gagnez du temps, réduisez les erreurs et boostez votre productivité
+          pour vous concentrer sur ce qui compte vraiment.
+        </p>
+      </div>
+      <div class="ilustration">
+        <img class="blob" src="img/blob-make.png" alt="Blob 1" />
+      </div>
+    </div>
+    <div class="companies">
+      <h2>Les entreprises qui nous font confiance</h2>
+      <div class="logos">
+        <div class="logos-slide">
+          <a href="https://workspace.google.com/" target="_blank">
+            <img src="img/google-workspace logo.png" alt="Logo de Google Workspace" />
+          </a>
+          <a href="https://www.spotify.com/" target="_blank">
+            <img src="img/spotify logo.png" alt="Logo de Spotify" />
+          </a>
+          <a href="https://www.make.com/" target="_blank">
+            <img src="img/make-logo-rgb-3 logo.png" alt="Logo de Make" />
+          </a>
+          <a href="https://n8n.io/" target="_blank">
+            <img src="img/N8n-logo-new logo.png" alt="Logo de N8n" />
+          </a>
+          <a href="https://www.amazon.com/" target="_blank">
+            <img src="img/amazon.png" alt="Logo de Amazon" />
+          </a>
+          <a href="https://discord.com/" target="_blank">
+            <img src="img/discord.png" alt="Logo de Discord" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="circle">
+          <h2>1</h2>
+        </div>
+        <p>Automatisez vos processus pour gagner du temps et accomplir plus, plus rapidement.</p>
+      </div>
+      <div class="card">
+        <div class="circle">
+          <h2>2</h2>
+        </div>
+        <p>Réduisez les erreurs humaines avec des solutions précises et performantes.</p>
+      </div>
+      <div class="card">
+        <div class="circle">
+          <h2>3</h2>
+        </div>
+        <p>Libérez-vous des tâches répétitives pour vous concentrer sur vos objectifs stratégiques.</p>
+      </div>
+    </div>
+
+
+    <div class="contact" id="contact">
+      <div class="form">
+        <h2>Restons en contact !</h2>
+        <form action="index.php" method="post">
+          <div class="input">
+            <div class="label-line">
+              <label for="name">Nom</label>
+              <div class="line"></div>
+            </div>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="input">
+            <div class="label-line">
+              <label for="email">Email</label>
+              <div class="line"></div>
+            </div>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input">
+            <div class="label-line">
+              <label for="message">Message</label>
+              <div class="line"></div>
+            </div>
+            <textarea id="message" name="message" required style="resize: none;"></textarea>
+          </div>
+          <button class="contact-button"><span>Envoyer</span></button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+    <div class="footer">
+      <div class="socialmedia">
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="img/instagram.png" alt="Logo d'Instagram" />
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="img/facebook.png" alt="Logo de Facebook" />
+        </a>
+        <a href="https://www.discord.com/" target="_blank">
+          <img src="img/discord-icon.png" alt="Logo de Discord" />
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+          <img src="img/linkedin.png" alt="Logo de LinkedIn" />
+        </a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <img src="img/twitter.png" alt="Logo de Twitter" />
+        </a>
+
+      </div>
+      <div class="title">
+        <h2>Réalisez le plein potentiel de votre entreprise</h2>
+      </div>
+      <div class="main-footer">
+
+        <div class="left">
+          <img src="img/icon.png" alt="Logo de l'entreprise" />
+          <p class="address">Othomatisazion, 21 rue du bignon,
+            <br />
+            35135 Chantepie
+          </p>
+          <p class="phone">+33 7 32 45 32 32 32</p>
+          <p class="email">
+            <a href="mailto:contact@othomatisazion.com">contact@othomatisazion.com</a>
+          </p>
+        </div>
+        <div class="right">
+          <h2>Plan du site</h2>
+          <nav>
+            <ul>
+              <li><a href="/">Accueil</a></li>
+              <li><a href="/">Projets</a></li>
+              <li><a href="/">Outils</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+      <div class="copy">
+        <p>&copy; 2025 Othomatisazion, Inc. Tous droits réservés.</p>
+      </div>
+
+    </div>
 </body>
+
 </html>
