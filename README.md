@@ -38,9 +38,9 @@
 - Développeur 3 :  flavio 6
 
 ## Défis et Résolutions de Conflits
-- 1)Je n'étais pas dans le bon dossier 
-2) aucun problème de merge car on acréer des fichier html et css différents.
-- 1)cd 'path'
+- Ne pas être dans le bon dossier
+- Aucun problème de merge car on a créé des fichiers html et css différents.
+- cd 'path'
 - Captures d'écran des conflits
 
 ## Rétrospective
