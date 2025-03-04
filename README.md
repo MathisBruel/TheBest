@@ -1,6 +1,5 @@
 # TheBest
 
-<<<<<<< HEAD
 # Rapport de Collaboration Git
 
 ## Informations du Projet
@@ -48,5 +47,3 @@
 - Plusieurs développeurs peuvent travailler simultanément sur le même projet sans se gêner. Chacun peut créer sa propre branche
 - difficultés avec le langage git pour les débutants.
 - les commandes sont mieux rentrés en tête.
-=======
->>>>>>> c8102d7ad5ee08d2d3cd3f9fae8623bd9a20ffca
