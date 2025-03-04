@@ -35,7 +35,7 @@
 ### Contributions individuelles
 - Développeur 1 : mathis: 12
 - Développeur 2 : sebastien: 5 (avec le readme)
-- Développeur 3 : flavio 6
+- Développeur 3 :  flavio 6
 
 ## Défis et Résolutions de Conflits
 - 1)Je n'étais pas dans le bon dossier 
